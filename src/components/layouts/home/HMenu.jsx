@@ -5,7 +5,7 @@ const HMenu = () => {
   const [menus, setMenus] = useState([]);
 
   useEffect(() => {
-    fetch("./menu.json")
+    fetch("../unit/menu.json")
       .then((res) => res.json())
       .then((data) => setMenus(data));
   }, []);

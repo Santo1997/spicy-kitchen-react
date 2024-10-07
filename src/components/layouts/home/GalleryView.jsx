@@ -1,5 +1,5 @@
-import img from "../../../assets/img.jpg";
 import Headings from "../../utilities/Headings";
+import img from "../../../assets/img.jpg";
 
 const GalleryView = () => {
   return (

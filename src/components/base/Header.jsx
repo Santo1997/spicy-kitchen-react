@@ -2,11 +2,12 @@ import {FaFacebookF, FaInstagram, FaMobileAlt, FaTwitter} from "react-icons/fa";
 import {IoMdMail} from "react-icons/io";
 import {IoLocation} from "react-icons/io5";
 import Links from "./Links";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import {useEffect, useState} from "react";
 
 const Header = () => {
   const [position, setPosition] = useState("");
+  const path = useLocation().pathname;
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -42,7 +43,7 @@ const Header = () => {
         </div>
       </section>
 
-      <section className={`w-full fixed z-50 ${position} `}>
+      <section className={`w-full h-20 flex items-center fixed z-50 ${position} ${path === "/" ? "" : "bg-black"} `}>
         <div className="navbar px-8">
           <div className="navbar-start">
             <div className="dropdown">
@@ -62,7 +63,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="px-1 hover:text-info hover:bg-inherit border-b-2 border-transparent hover:border-info rounded-none">
+                <Link to="/about" className="px-1 hover:text-info hover:bg-inherit border-b-2 border-transparent hover:border-info rounded-none">
                   About
                 </Link>
               </li>
