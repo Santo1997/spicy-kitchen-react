@@ -80,8 +80,13 @@ const Header = () => {
           <div className="navbar-end">
             <ul className="menu menu-horizontal px-1 uppercase text-white gap-5">
               <li>
-                <Link to="/" className="px-1 hover:text-info hover:bg-inherit border-b-2 border-transparent hover:border-info rounded-none">
-                  Pages
+                <Link to="/book_table" className="px-1 hover:text-info hover:bg-inherit border-b-2 border-transparent hover:border-info rounded-none">
+                  Book Table
+                </Link>
+              </li>
+              <li>
+                <Link to="/gallary" className="px-1 hover:text-info hover:bg-inherit border-b-2 border-transparent hover:border-info rounded-none">
+                  Gallery
                 </Link>
               </li>
               <li>
