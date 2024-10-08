@@ -10,7 +10,6 @@ const HMenu = () => {
       .then((data) => setMenus(data));
   }, []);
 
-  console.log(menus);
   return (
     <section className="min-h-screen flex justify-center bg-black pt-20">
       <div>

@@ -68,7 +68,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="px-1 hover:text-info hover:bg-inherit border-b-2 border-transparent hover:border-info rounded-none">
+                <Link to="/menu" className="px-1 hover:text-info hover:bg-inherit border-b-2 border-transparent hover:border-info rounded-none">
                   Menu
                 </Link>
               </li>
